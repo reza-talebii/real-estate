@@ -27,7 +27,7 @@ const Banner = ({
           {purpose}
         </Text>
         <Text fontSize="3x1" fontWeight={"bold"}>
-          {purpose}
+          {title1} <br /> {title2}
         </Text>
         <Text
           color={"gray.700"}
@@ -36,7 +36,7 @@ const Banner = ({
           paddingBottom={"3"}
           paddingTop="e"
         >
-          {purpose}
+          {desc1} <br /> {desc2}
         </Text>
 
         <Button fontSize={"xl"}>
