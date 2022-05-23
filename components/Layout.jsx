@@ -2,7 +2,7 @@ import React from "react";
 
 import { Box } from "@chakra-ui/react";
 
-import { Navbar } from "./";
+import { Navbar, Footer } from "./";
 
 const Layout = ({ children }) => {
   return (
@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
           <Navbar />
         </header>
         <main>{children}</main>
-        <footer>footer</footer>
+        <Footer />
       </Box>
     </>
   );

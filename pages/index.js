@@ -18,7 +18,7 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
         imageUrl="/assets/banner.webp"
       />
 
-      <Flex flexWrap={"wrap"}>
+      <Flex flexWrap={"wrap"} justifyContent="center">
         {propertiesForRent.map((property) => (
           <Property property={property} key={property.id} />
         ))}
@@ -35,7 +35,7 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
         imageUrl="/assets/banner1.webp"
       />
 
-      <Flex flexWrap={"wrap"}>
+      <Flex flexWrap={"wrap"} justifyContent="center">
         {propertiesForSale.map((property) => (
           <Property property={property} key={property.id} />
         ))}

@@ -5,11 +5,12 @@ const Footer = () => {
     <Box
       textAlign="center"
       p="5"
-      color="gray.600"
+      color="gray.800"
       borderTop="1px"
       borderColor="gray.100"
+      fontSize="1.2rem"
     >
-      2022 RealTor m Inc.
+      © 2021 Realtor, Inc.
     </Box>
   );
 };
