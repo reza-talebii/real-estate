@@ -24,8 +24,6 @@ const Property = ({ property }) => {
 
   const defaultImage = "/assets/default.webp";
 
-  console.log(coverPhoto);
-
   return (
     <Link href={`/property/${externalID}`} passHref>
       <Flex
@@ -56,7 +54,24 @@ const Property = ({ property }) => {
                 AED {price} {rentFrequency && `/${rentFrequency}`}
               </Text>
             </Flex>
+
+            <Box>
+              <Avatar size="sm" src={agency?.logo?.url} />
+            </Box>
           </Flex>
+
+          <Flex
+            alignItems={"center"}
+            p="1"
+            justifyContent={"space-between"}
+            w="250px"
+            color={"blue.400"}
+          >
+            {rooms} <FaBed /> <FaBath /> {area} sgft <BsGridFill />
+          </Flex>
+          <Text fontSize={"lg"}>
+            {title.length > 30 ? `${title.substring(0, 30)}...` : title}
+          </Text>
         </Box>
       </Flex>
     </Link>
