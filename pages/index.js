@@ -5,8 +5,6 @@ import { Banner, Property } from "../components";
 import { Box, Flex } from "@chakra-ui/react";
 
 export default function Home({ propertiesForSale, propertiesForRent }) {
-  console.log(propertiesForRent, propertiesForSale);
-
   return (
     <Box>
       <Banner

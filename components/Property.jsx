@@ -35,12 +35,7 @@ const Property = ({ property }) => {
         cursor="pointer"
       >
         <Box>
-          <Image
-            src={coverPhoto ? coverPhoto.url : defaultImage}
-            alt="house"
-            width={400}
-            height={260}
-          />
+          <Image src={defaultImage} alt="house" width={400} height={260} />
         </Box>
 
         <Box w={"full"}>
