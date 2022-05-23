@@ -16,5 +16,9 @@ import {
 import { MdCancel } from "react-icons/md";
 
 const SearchFilter = () => {
-  return <Box></Box>;
+  const router = useRouter();
+
+  return <Text>Hello</Text>;
 };
+
+export default SearchFilter;
