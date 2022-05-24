@@ -29,7 +29,7 @@ const PropertyDetail = ({ propertyDetail }) => {
 
   return (
     <Box maxWidth="1000px" m="auto" p="4">
-      {photos && <ImageScrollBar images={photos} />}
+      {photos && <ImageScrollBar data={photos} />}
     </Box>
   );
 };
