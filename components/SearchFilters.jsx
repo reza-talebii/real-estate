@@ -13,8 +13,6 @@ import {
   Button,
 } from "@chakra-ui/react";
 
-import { MdCancel } from "react-icons/md";
-
 import { filterData, getFilterValues } from "../utils/filterData";
 
 const SearchFilter = () => {
@@ -28,7 +26,9 @@ const SearchFilter = () => {
     const values = getFilterValues(filterValues);
 
     values.map((item) => {
-      query[item.name] = item.value;
+      if (item.value && filterValues?.[item.name]) {
+        query[item.name] = item.value;
+      }
     });
 
     router.push({ pathname: path, query });
